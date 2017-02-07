@@ -46,6 +46,7 @@ func main() {
 	}
 
 	f.Write(content)
+	f.Sync()
 	f.Close()
 
 	os.Remove(fileName)
